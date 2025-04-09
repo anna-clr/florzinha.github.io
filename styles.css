@@ -1,0 +1,90 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container-fluid{
+    flex: 1;
+}
+.sidebar{
+    min-height: calc(100vh - 56pc);
+    box-shadow: 2px 0 5px rgba(red, green, blue, alpha);
+    width: 16.666667%;
+    position: relative;
+    z-index: 1;
+}
+.sidebar .nav-link{
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.sidebar .nav-link:hover{
+    color: #0d6efd;
+}
+.sidebar .nav-link i{
+    margin-right: 10px;
+}
+.content-area{
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(255, 165, 211);
+}
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -20px -20px 20px -20px;
+}
+.card {
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(red, green, blue, alpha);
+}
+footer{
+    margin-top: auto;
+}
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #0d6efd !important;
+}
+@media (max-widht: 991.98x ) {
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+    .content-area {
+        width: 100%;
+    }
+    .hero-section {
+        padding: 60px 20px;
+        height: auto;
+    }
+}
+@media (max-width: 575.98px) {
+    .content-area {
+        padding: 15px;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    footer {
+        padding: 20px 0 !important;
+    }
+    footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
